@@ -60,7 +60,12 @@ public class LoginPage extends GeneralPage {
     public LoginPage loginExpectingError(String username, String password) {
         fillLoginForm(username, password);
 <<<<<<< HEAD
+<<<<<<< HEAD
         // Return the current page object because we expect to stay on the login page
+=======
+        // Wait for error message to be visible to ensure page is stable for subsequent actions
+        getErrorMessage();
+>>>>>>> dbd0c7e23b178ffc512c4d702894414ef4ec7c20
 =======
         // Wait for error message to be visible to ensure page is stable for subsequent actions
         getErrorMessage();

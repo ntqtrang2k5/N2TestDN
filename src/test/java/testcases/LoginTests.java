@@ -9,6 +9,10 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import common.Constant;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+import common.LogUtils;
+>>>>>>> dbd0c7e23b178ffc512c4d702894414ef4ec7c20
 =======
 import common.LogUtils;
 >>>>>>> dbd0c7e23b178ffc512c4d702894414ef4ec7c20
@@ -37,12 +41,15 @@ public class LoginTests {
     @Test
     public void TC01() {
 <<<<<<< HEAD
+<<<<<<< HEAD
         System.out.println("TC01 - User can log into Railway with valid username and password");
         HomePage homePage = new HomePage();
         homePage.open();
 
         LoginPage loginPage = homePage.gotoLoginPage();
 =======
+=======
+>>>>>>> dbd0c7e23b178ffc512c4d702894414ef4ec7c20
         LogUtils.info("TC01 - User can log into Railway with valid username and password");
         HomePage homePage = new HomePage();
         LogUtils.info("1. Navigate to Railway website");
@@ -53,6 +60,9 @@ public class LoginTests {
         
         LogUtils.info("3. Enter valid Email and Password");
         LogUtils.info("4. Click on 'Login' button");
+<<<<<<< HEAD
+>>>>>>> dbd0c7e23b178ffc512c4d702894414ef4ec7c20
+=======
 >>>>>>> dbd0c7e23b178ffc512c4d702894414ef4ec7c20
         homePage = loginPage.login(Constant.USERNAME, Constant.PASSWORD);
 
@@ -60,12 +70,18 @@ public class LoginTests {
         String actualWelcomeMessage = homePage.getWelcomeMessage();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         Assert.assertEquals(actualWelcomeMessage, expectedWelcomeMessage, "Welcome message is not displayed as expected");
 =======
+=======
+>>>>>>> dbd0c7e23b178ffc512c4d702894414ef4ec7c20
         LogUtils.info("Verify welcome message is displayed");
         Assert.assertEquals(actualWelcomeMessage, expectedWelcomeMessage, "Welcome message is not displayed as expected");
         
         LogUtils.info("Verify Book Ticket, My Ticket, and Change Password tabs are displayed");
+<<<<<<< HEAD
+>>>>>>> dbd0c7e23b178ffc512c4d702894414ef4ec7c20
+=======
 >>>>>>> dbd0c7e23b178ffc512c4d702894414ef4ec7c20
         Assert.assertTrue(homePage.isBookTicketTabDisplayed(), "Book Ticket tab is not displayed");
         Assert.assertTrue(homePage.isMyTicketTabDisplayed(), "My Ticket tab is not displayed");
@@ -75,6 +91,7 @@ public class LoginTests {
     @Test
     public void TC02() {
 <<<<<<< HEAD
+<<<<<<< HEAD
         System.out.println("TC02 - User can't login with blank Username textbox");
         HomePage homePage = new HomePage();
         homePage.open();
@@ -82,6 +99,8 @@ public class LoginTests {
         LoginPage loginPage = homePage.gotoLoginPage();
         loginPage.loginExpectingError("", Constant.PASSWORD);
 =======
+=======
+>>>>>>> dbd0c7e23b178ffc512c4d702894414ef4ec7c20
         LogUtils.info("TC02 - User can't login with blank Username textbox");
         HomePage homePage = new HomePage();
         LogUtils.info("1. Navigate to Railway website");
@@ -94,6 +113,9 @@ public class LoginTests {
         loginPage.loginExpectingError("", Constant.PASSWORD);
         
         LogUtils.info("Verify error message for blank username");
+<<<<<<< HEAD
+>>>>>>> dbd0c7e23b178ffc512c4d702894414ef4ec7c20
+=======
 >>>>>>> dbd0c7e23b178ffc512c4d702894414ef4ec7c20
         String actualErrorMsg = loginPage.getErrorMessage();
         String expectedErrorMsg = "There was a problem with your login and/or errors exist in your form. ";
@@ -104,6 +126,7 @@ public class LoginTests {
 
     @Test
     public void TC03() {
+<<<<<<< HEAD
 <<<<<<< HEAD
         System.out.println("TC03 - User cannot log into Railway with invalid password");
 
@@ -118,6 +141,8 @@ public class LoginTests {
         String actualMsg = loginPage.getErrorMessage();
 
 =======
+=======
+>>>>>>> dbd0c7e23b178ffc512c4d702894414ef4ec7c20
         LogUtils.info("TC03 - User cannot log into Railway with invalid password");
 
         HomePage homePage = new HomePage();
@@ -132,6 +157,9 @@ public class LoginTests {
 
         LogUtils.info("Verify error message for invalid password");
         String actualMsg = loginPage.getErrorMessage();
+<<<<<<< HEAD
+>>>>>>> dbd0c7e23b178ffc512c4d702894414ef4ec7c20
+=======
 >>>>>>> dbd0c7e23b178ffc512c4d702894414ef4ec7c20
         String expectedMsg = "There was a problem with your login and/or errors exist in your form. ";
 
@@ -141,6 +169,7 @@ public class LoginTests {
 
     @Test
     public void TC05() {
+<<<<<<< HEAD
 <<<<<<< HEAD
         System.out.println("TC05 - System shows message when user enters wrong password several times");
 
@@ -155,6 +184,8 @@ public class LoginTests {
         }
 
 =======
+=======
+>>>>>>> dbd0c7e23b178ffc512c4d702894414ef4ec7c20
         LogUtils.info("TC05 - System shows message when user enters wrong password several times");
 
         HomePage homePage = new HomePage();
@@ -176,6 +207,9 @@ public class LoginTests {
         }
 
         LogUtils.info("Verify error message for multiple failed login attempts");
+<<<<<<< HEAD
+>>>>>>> dbd0c7e23b178ffc512c4d702894414ef4ec7c20
+=======
 >>>>>>> dbd0c7e23b178ffc512c4d702894414ef4ec7c20
         String actualMsg = loginPage.getErrorMessage();
         String expectedMsg = "You have used 4 out of 5 login attempts. After all 5 have been used, you will be unable to login for 15 minutes.";
@@ -185,6 +219,7 @@ public class LoginTests {
 
     @Test
     public void TC06() {
+<<<<<<< HEAD
 <<<<<<< HEAD
         System.out.println("TC06 - Additional pages display once user logged in");
 
@@ -209,6 +244,8 @@ public class LoginTests {
         wait.until(ExpectedConditions.urlContains("ManageTicket.cshtml"));
 
 =======
+=======
+>>>>>>> dbd0c7e23b178ffc512c4d702894414ef4ec7c20
         LogUtils.info("TC06 - Additional pages display once user logged in");
 
         HomePage homePage = new HomePage();
@@ -235,11 +272,15 @@ public class LoginTests {
         wait.until(ExpectedConditions.urlContains("ManageTicket.cshtml"));
 
         LogUtils.info("Verify navigation to My Ticket page");
+<<<<<<< HEAD
+>>>>>>> dbd0c7e23b178ffc512c4d702894414ef4ec7c20
+=======
 >>>>>>> dbd0c7e23b178ffc512c4d702894414ef4ec7c20
         String currentUrl = Constant.WEBDRIVER.getCurrentUrl();
         Assert.assertNotNull(currentUrl, "Current URL should not be null");
         Assert.assertTrue(currentUrl.contains("ManageTicket.cshtml"), "Did not navigate to My Ticket page correctly.");
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         // Go back to home page to click the next tab
         Constant.WEBDRIVER.navigate().back();
@@ -251,6 +292,8 @@ public class LoginTests {
         wait.until(ExpectedConditions.urlContains("ChangePassword.cshtml"));
 
 =======
+=======
+>>>>>>> dbd0c7e23b178ffc512c4d702894414ef4ec7c20
         Constant.WEBDRIVER.navigate().back();
 
         LogUtils.info("5. Click on 'Change Password' tab");
@@ -259,6 +302,9 @@ public class LoginTests {
         wait.until(ExpectedConditions.urlContains("ChangePassword.cshtml"));
 
         LogUtils.info("Verify navigation to Change Password page");
+<<<<<<< HEAD
+>>>>>>> dbd0c7e23b178ffc512c4d702894414ef4ec7c20
+=======
 >>>>>>> dbd0c7e23b178ffc512c4d702894414ef4ec7c20
         currentUrl = Constant.WEBDRIVER.getCurrentUrl();
         Assert.assertNotNull(currentUrl, "Current URL should not be null");

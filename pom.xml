@@ -18,6 +18,7 @@
             <artifactId>testng</artifactId>
             <version>7.10.2</version>
 <<<<<<< HEAD
+<<<<<<< HEAD
         </dependency>
         <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
         <dependency>
@@ -25,6 +26,8 @@
             <artifactId>commons-io</artifactId>
             <version>2.11.0</version>
 =======
+=======
+>>>>>>> dbd0c7e23b178ffc512c4d702894414ef4ec7c20
             <scope>test</scope>
         </dependency>
         <!-- Source: https://mvnrepository.com/artifact/com.aventstack/extentreports -->
@@ -32,6 +35,9 @@
             <groupId>com.aventstack</groupId>
             <artifactId>extentreports</artifactId>
             <version>5.1.2</version>
+<<<<<<< HEAD
+>>>>>>> dbd0c7e23b178ffc512c4d702894414ef4ec7c20
+=======
 >>>>>>> dbd0c7e23b178ffc512c4d702894414ef4ec7c20
         </dependency>
     </dependencies>
@@ -42,12 +48,15 @@
 
     <properties>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <maven.compiler.source>25</maven.compiler.source>
         <maven.compiler.target>25</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
 =======
+=======
+>>>>>>> dbd0c7e23b178ffc512c4d702894414ef4ec7c20
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -78,5 +87,8 @@
         </plugins>
     </build>
 
+<<<<<<< HEAD
+>>>>>>> dbd0c7e23b178ffc512c4d702894414ef4ec7c20
+=======
 >>>>>>> dbd0c7e23b178ffc512c4d702894414ef4ec7c20
 </project>

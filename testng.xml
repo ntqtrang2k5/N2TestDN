@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Railway Suite">
 
@@ -7,17 +8,23 @@
     </listeners>
 
 =======
+=======
+>>>>>>> dbd0c7e23b178ffc512c4d702894414ef4ec7c20
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Railway Test Suite">
     <listeners>
         <listener class-name="common.TestListener"/>
     </listeners>
+<<<<<<< HEAD
+>>>>>>> dbd0c7e23b178ffc512c4d702894414ef4ec7c20
+=======
 >>>>>>> dbd0c7e23b178ffc512c4d702894414ef4ec7c20
     <test name="Railway Tests">
         <classes>
             <class name="testcases.LoginTests"/>
             <class name="testcases.RegisterTests"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
             <class name="testcases.ChangePasswordTests"/>
             <class name="testcases.ResetPasswordTests"/>
@@ -29,6 +36,8 @@
 
 </suite>
 =======
+=======
+>>>>>>> dbd0c7e23b178ffc512c4d702894414ef4ec7c20
             <class name="testcases.BookTicketTests"/>
             <class name="testcases.ChangePasswordTests"/>
             <class name="testcases.MyTicketTests"/>
@@ -37,4 +46,7 @@
         </classes>
     </test>
 </suite>
+<<<<<<< HEAD
+>>>>>>> dbd0c7e23b178ffc512c4d702894414ef4ec7c20
+=======
 >>>>>>> dbd0c7e23b178ffc512c4d702894414ef4ec7c20

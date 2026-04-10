@@ -7,7 +7,11 @@ public class Main {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
 <<<<<<< HEAD
+<<<<<<< HEAD
         IO.println(String.format("Hello and welcome!"));
+=======
+        System.out.println(String.format("Hello and welcome!"));
+>>>>>>> dbd0c7e23b178ffc512c4d702894414ef4ec7c20
 =======
         System.out.println(String.format("Hello and welcome!"));
 >>>>>>> dbd0c7e23b178ffc512c4d702894414ef4ec7c20
@@ -16,7 +20,11 @@ public class Main {
             //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
             // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
 <<<<<<< HEAD
+<<<<<<< HEAD
             IO.println("i = " + i);
+=======
+            System.out.println("i = " + i);
+>>>>>>> dbd0c7e23b178ffc512c4d702894414ef4ec7c20
 =======
             System.out.println("i = " + i);
 >>>>>>> dbd0c7e23b178ffc512c4d702894414ef4ec7c20
